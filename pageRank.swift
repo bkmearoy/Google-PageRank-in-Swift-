@@ -69,9 +69,6 @@ public class SwiftGraph {
             neighbor.neighbors.append(reverseEdge)
         }
     }
-    
-    
-    
     /**
      * calPageRankVertices(),function This calculates the page rank of various vertices using the formula described here:
      *  https://en.wikipedia.org/wiki/PageRank#Damping_factor
@@ -113,16 +110,11 @@ public class SwiftGraph {
         for (v) in canvas{
             print(v.key, v.rank);
         }
-    }
-    
-    
-    
-    
+    }    
 }// end graph
 
-//
+//class instaces 
 var graph = SwiftGraph()
-
 //add vertex
 var a = graph.addVertex("a")
 //.......
@@ -132,5 +124,4 @@ graph.addEdge(a, neighbor: b, weight: 1)
 //....
 //....
 // call calPageRankVertices 
-
 graph.calPageRankVertices()
